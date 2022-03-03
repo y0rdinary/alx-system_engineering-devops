@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """
 Usng https://jsonplaceholder/typicode.com
 returns info about employee TODO progress
