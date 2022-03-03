@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Using https://jsonplaceholder.typicode.com
-gathers data from API and exports it to CVS file
+gathers data from API and exports it to CSV file
 Implemented using recursion
 """
 import re
@@ -14,7 +14,7 @@ API = "https://jsonplaceholder.typicode.com"
 
 
 if __name__ == '__main__':
-  if len(sys.argv) > 1:
+    if len(sys.argv) > 1:
         if re.fullmatch(r'\d+', sys.argv[1]):
             id = int(sys.argv[1])
             user_res = requests.get('{}/users/{}'.format(API, id)).json()
